@@ -10,7 +10,8 @@ public class Sierpinski {
 		double x1 = 0.0, y1 = 0.0;
 		double x2 = 1.0, y2 = 0.0;
 		double x3 = 0.5, y3 = 0.866;
-		sierpinski(n, x1, x2, x3, y1, y2, y3);
+		if(n > 0)  sierpinski(n, x1, x2, x3, y1, y2, y3);
+		else  System.out.println("Enter a valid number");
 	}
 	
 	// Does the actual drawing, recursively.
